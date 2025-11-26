@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     tl.from(".hero-glitch", { duration: 1, opacity: 0, y: 20, ease: "power2.out" });
 
-    // Simplified typing effect without TextPlugin dependency
     consoleLines.forEach((line) => {
         const originalText = line.innerText;
         line.innerText = ""; 
@@ -56,49 +55,60 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // --- 4. SEMINAR CARDS REVEAL ---
-    // Changed to autoAlpha to handle visibility + opacity
-    gsap.from(".reveal-card", {
-        scrollTrigger: {
-            trigger: ".cyber-seminars",
-            start: "top 85%",
-        },
-        y: 50,
-        autoAlpha: 0, 
-        stagger: 0.2,
-        duration: 0.8,
-        ease: "back.out(1.7)"
-    });
+    gsap.fromTo(".reveal-card", 
+        { y: 50, opacity: 0 },
+        {
+            scrollTrigger: {
+                trigger: ".cyber-seminars",
+                start: "top 85%",
+            },
+            y: 0,
+            opacity: 1,
+            stagger: 0.2,
+            duration: 0.8,
+            ease: "back.out(1.7)"
+        }
+    );
 
-    // --- 5. SKILL TREE NODES POP-IN ---
-    // Changed to autoAlpha to handle visibility + opacity
-    gsap.from(".reveal-node", {
-        scrollTrigger: {
-            trigger: ".skill-tree-section",
-            start: "top 85%",
-        },
-        scale: 0,
-        autoAlpha: 0,
-        stagger: 0.15,
-        duration: 0.6,
-        ease: "elastic.out(1, 0.5)"
-    });
+    // --- 5. SKILL TREE NODES REVEAL (FIXED) ---
+    // Used fromTo to force visibility state
+    gsap.fromTo(".reveal-node", 
+        { scale: 0.5, opacity: 0 },
+        {
+            scrollTrigger: {
+                trigger: ".skill-tree-section",
+                start: "top 90%", // Trigger earlier
+            },
+            scale: 1,
+            opacity: 1,
+            stagger: 0.15,
+            duration: 0.6,
+            ease: "back.out(1.7)"
+        }
+    );
 
     // --- 6. LEADERBOARD SLIDE-IN ---
-    gsap.from(".lb-row", {
-        scrollTrigger: {
-            trigger: ".leaderboard-preview",
-            start: "top 85%",
-        },
-        x: -50,
-        opacity: 0,
-        stagger: 0.1,
-        duration: 0.6,
-        ease: "power2.out"
-    });
+    gsap.fromTo(".lb-row", 
+        { x: -50, opacity: 0 },
+        {
+            scrollTrigger: {
+                trigger: ".leaderboard-preview",
+                start: "top 90%",
+            },
+            x: 0,
+            opacity: 1,
+            stagger: 0.1,
+            duration: 0.6,
+            ease: "power2.out"
+        }
+    );
 
     // --- 7. TERMINAL LOGS ---
-    gsap.from(".log-entry", {
-        scrollTrigger: { trigger: ".terminal-window", start: "top 85%" },
-        opacity: 0, x: -20, stagger: 0.2, duration: 0.5
-    });
+    gsap.fromTo(".log-entry", 
+        { x: -20, opacity: 0 },
+        {
+            scrollTrigger: { trigger: ".terminal-window", start: "top 90%" },
+            x: 0, opacity: 1, stagger: 0.2, duration: 0.5
+        }
+    );
 });
