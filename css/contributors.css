@@ -152,6 +152,7 @@
     max-width: 100%;
 }
 
+/* Base Badge Style */
 .cont-commits-badge {
     font-size: 0.85rem;
     padding: 6px 12px;
@@ -162,15 +163,17 @@
     transition: all 0.3s ease;
 }
 
-/* --- SHINING TEXT ANIMATION --- */
-@keyframes shine-text {
+/* --- SHINING ANIMATION --- */
+@keyframes shine-effect {
     0% { background-position: -200%; }
     100% { background-position: 200%; }
 }
 
-/* --- LEAGUE STYLES (GOLD, SILVER, BRONZE) --- */
+/* =========================================
+   1. LEAGUE CARD STYLES (GOLD, SILVER, BRONZE)
+   ========================================= */
 
-/* 1. GOLD LEAGUE */
+/* --- GOLD LEAGUE --- */
 .contributor-card.tier-gold {
     border: 2px solid #FFD700;
     background: linear-gradient(145deg, rgba(255, 215, 0, 0.08), var(--card-bg));
@@ -188,18 +191,19 @@
     color: #FFD700;
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
 }
+/* Gold Badge - Black Text */
 .contributor-card.tier-gold .cont-commits-badge {
     background: linear-gradient(90deg, #FFD700, #FFF8DC, #FFD700);
     background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine-text 3s linear infinite;
-    border: 1px solid rgba(255, 215, 0, 0.4);
+    color: #000000 !important; /* FORCE BLACK TEXT */
+    -webkit-text-fill-color: #000000;
+    border: 1px solid #FFD700;
     font-weight: 800;
-    font-size: 0.9rem;
+    animation: shine-effect 3s linear infinite;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
 }
 
-/* 2. SILVER LEAGUE */
+/* --- SILVER LEAGUE --- */
 .contributor-card.tier-silver {
     border: 2px solid #C0C0C0;
     background: linear-gradient(145deg, rgba(192, 192, 192, 0.08), var(--card-bg));
@@ -214,21 +218,22 @@
     box-shadow: 0 0 15px rgba(192, 192, 192, 0.4);
 }
 .contributor-card.tier-silver .cont-name {
-    color: #E0E0E0; /* Slightly brighter for visibility */
+    color: #E0E0E0;
     text-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
 }
+/* Silver Badge - Black Text */
 .contributor-card.tier-silver .cont-commits-badge {
     background: linear-gradient(90deg, #C0C0C0, #FFFFFF, #C0C0C0);
     background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine-text 3s linear infinite;
-    border: 1px solid rgba(192, 192, 192, 0.4);
+    color: #000000 !important; /* FORCE BLACK TEXT */
+    -webkit-text-fill-color: #000000;
+    border: 1px solid #C0C0C0;
     font-weight: 800;
-    font-size: 0.9rem;
+    animation: shine-effect 3s linear infinite;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.4);
 }
 
-/* 3. BRONZE LEAGUE */
+/* --- BRONZE LEAGUE --- */
 .contributor-card.tier-bronze {
     border: 2px solid #CD7F32;
     background: linear-gradient(145deg, rgba(205, 127, 50, 0.08), var(--card-bg));
@@ -245,18 +250,19 @@
 .contributor-card.tier-bronze .cont-name {
     color: #CD7F32;
 }
+/* Bronze Badge - Black Text */
 .contributor-card.tier-bronze .cont-commits-badge {
     background: linear-gradient(90deg, #CD7F32, #FFDAB9, #CD7F32);
     background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine-text 3s linear infinite;
-    border: 1px solid rgba(205, 127, 50, 0.4);
+    color: #000000 !important; /* FORCE BLACK TEXT */
+    -webkit-text-fill-color: #000000;
+    border: 1px solid #CD7F32;
     font-weight: 800;
-    font-size: 0.9rem;
+    animation: shine-effect 3s linear infinite;
+    box-shadow: 0 0 10px rgba(205, 127, 50, 0.4);
 }
 
-/* 4. DEFAULT CONTRIBUTOR (Normal) */
+/* --- DEFAULT CONTRIBUTOR (Normal) --- */
 .contributor-card.tier-contributor {
     border: 1px solid var(--border-color);
 }
@@ -264,8 +270,86 @@
     border-color: var(--accent-color);
     box-shadow: var(--shadow);
 }
+/* Default Badge - Normal Text */
 .contributor-card.tier-contributor .cont-commits-badge {
     color: var(--text-secondary);
+    background: rgba(0, 170, 255, 0.1);
+}
+
+/* =========================================
+   2. DYNAMIC MODAL STYLES (Based on League)
+   ========================================= */
+
+/* --- GOLD MODAL THEME --- */
+.modal-container.tier-gold {
+    border: 2px solid #FFD700;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+}
+.modal-container.tier-gold .modal-header img {
+    border-color: #FFD700;
+}
+.modal-container.tier-gold .modal-league-tag {
+    border-color: #FFD700;
+    color: #FFD700;
+    background: rgba(255, 215, 0, 0.1);
+}
+.modal-container.tier-gold .primary-btn {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    color: #000;
+    border: none;
+    font-weight: 800;
+}
+.modal-container.tier-gold .secondary-btn:hover {
+    border-color: #FFD700;
+    color: #FFD700;
+}
+
+/* --- SILVER MODAL THEME --- */
+.modal-container.tier-silver {
+    border: 2px solid #C0C0C0;
+    box-shadow: 0 0 30px rgba(192, 192, 192, 0.2);
+}
+.modal-container.tier-silver .modal-header img {
+    border-color: #C0C0C0;
+}
+.modal-container.tier-silver .modal-league-tag {
+    border-color: #C0C0C0;
+    color: #C0C0C0; /* Silver Text */
+    background: rgba(192, 192, 192, 0.1);
+}
+.modal-container.tier-silver .primary-btn {
+    background: linear-gradient(135deg, #E0E0E0, #B0B0B0);
+    color: #000;
+    border: none;
+    font-weight: 800;
+}
+.modal-container.tier-silver .secondary-btn:hover {
+    border-color: #C0C0C0;
+    color: #C0C0C0;
+}
+
+/* --- BRONZE MODAL THEME --- */
+.modal-container.tier-bronze {
+    border: 2px solid #CD7F32;
+    box-shadow: 0 0 30px rgba(205, 127, 50, 0.2);
+}
+.modal-container.tier-bronze .modal-header img {
+    border-color: #CD7F32;
+}
+.modal-container.tier-bronze .modal-league-tag {
+    border-color: #CD7F32;
+    color: #CD7F32;
+    background: rgba(205, 127, 50, 0.1);
+}
+.modal-container.tier-bronze .primary-btn {
+    background: linear-gradient(135deg, #CD7F32, #A0522D);
+    color: #fff;
+    border: none;
+    font-weight: 800;
+}
+.modal-container.tier-bronze .secondary-btn:hover {
+    border-color: #CD7F32;
+    color: #CD7F32;
 }
 
 /* --- ACTIVITY LIST --- */
@@ -344,7 +428,7 @@
     margin: 0;
 }
 
-/* --- MODAL --- */
+/* --- MODAL BASE --- */
 .modal-overlay {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -519,123 +603,4 @@
 .text-center {
     text-align: center;
     transform: translateY(-2px);
-}
-
-/* --- SHINING ANIMATION --- */
-@keyframes shine-effect {
-    0% { background-position: -200%; }
-    100% { background-position: 200%; }
-}
-
-/* =========================================
-   1. CARD BADGE STYLES (PR | Pts)
-   ========================================= */
-
-/* GOLD CARD BADGE */
-.contributor-card.tier-gold .cont-commits-badge {
-    background: linear-gradient(90deg, #FFD700, #FFF8DC, #FFD700); /* Gold Gradient */
-    background-size: 200% auto;
-    color: #000; /* Dark text for contrast on gold */
-    border: 1px solid #FFD700;
-    font-weight: 800;
-    animation: shine-effect 3s linear infinite;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
-}
-
-/* SILVER CARD BADGE */
-.contributor-card.tier-silver .cont-commits-badge {
-    background: linear-gradient(90deg, #C0C0C0, #FFFFFF, #C0C0C0); /* Silver Gradient */
-    background-size: 200% auto;
-    color: #000;
-    border: 1px solid #C0C0C0;
-    font-weight: 800;
-    animation: shine-effect 3s linear infinite;
-    box-shadow: 0 0 10px rgba(192, 192, 192, 0.4);
-}
-
-/* BRONZE CARD BADGE */
-.contributor-card.tier-bronze .cont-commits-badge {
-    background: linear-gradient(90deg, #CD7F32, #FFDAB9, #CD7F32); /* Bronze Gradient */
-    background-size: 200% auto;
-    color: #3e2723; /* Dark brown text */
-    border: 1px solid #CD7F32;
-    font-weight: 800;
-    animation: shine-effect 3s linear infinite;
-    box-shadow: 0 0 10px rgba(205, 127, 50, 0.4);
-}
-
-/* =========================================
-   2. DYNAMIC MODAL STYLES (Based on League)
-   ========================================= */
-
-/* --- GOLD MODAL THEME --- */
-.modal-container.tier-gold {
-    border: 2px solid #FFD700;
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
-}
-.modal-container.tier-gold .modal-header img {
-    border-color: #FFD700;
-}
-.modal-container.tier-gold .modal-league-tag {
-    border-color: #FFD700;
-    color: #FFD700;
-    background: rgba(255, 215, 0, 0.1);
-}
-.modal-container.tier-gold .primary-btn {
-    background: linear-gradient(135deg, #FFD700, #FFA500);
-    color: #000;
-    border: none;
-    font-weight: 800;
-}
-.modal-container.tier-gold .secondary-btn:hover {
-    border-color: #FFD700;
-    color: #FFD700;
-}
-
-/* --- SILVER MODAL THEME --- */
-.modal-container.tier-silver {
-    border: 2px solid #C0C0C0;
-    box-shadow: 0 0 30px rgba(192, 192, 192, 0.2);
-}
-.modal-container.tier-silver .modal-header img {
-    border-color: #C0C0C0;
-}
-.modal-container.tier-silver .modal-league-tag {
-    border-color: #C0C0C0;
-    color: #C0C0C0; /* Silver Text */
-    background: rgba(192, 192, 192, 0.1);
-}
-.modal-container.tier-silver .primary-btn {
-    background: linear-gradient(135deg, #E0E0E0, #B0B0B0);
-    color: #000;
-    border: none;
-    font-weight: 800;
-}
-.modal-container.tier-silver .secondary-btn:hover {
-    border-color: #C0C0C0;
-    color: #C0C0C0;
-}
-
-/* --- BRONZE MODAL THEME --- */
-.modal-container.tier-bronze {
-    border: 2px solid #CD7F32;
-    box-shadow: 0 0 30px rgba(205, 127, 50, 0.2);
-}
-.modal-container.tier-bronze .modal-header img {
-    border-color: #CD7F32;
-}
-.modal-container.tier-bronze .modal-league-tag {
-    border-color: #CD7F32;
-    color: #CD7F32;
-    background: rgba(205, 127, 50, 0.1);
-}
-.modal-container.tier-bronze .primary-btn {
-    background: linear-gradient(135deg, #CD7F32, #A0522D);
-    color: #fff;
-    border: none;
-    font-weight: 800;
-}
-.modal-container.tier-bronze .secondary-btn:hover {
-    border-color: #CD7F32;
-    color: #CD7F32;
 }
