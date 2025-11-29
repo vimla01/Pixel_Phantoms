@@ -254,7 +254,7 @@
     border-radius: 20px;
     border: 1px solid var(--border-color);
     backdrop-filter: blur(10px);
-    display: inline-block; /* This was overriding the previous .countdown-hidden class */
+    display: inline-block; 
 }
 
 #countdown-section h3 { margin: 0 0 20px 0; color: var(--text-secondary); font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; }
