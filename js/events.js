@@ -1,7 +1,7 @@
 // -------------------------------------------------------------------------
 // CONFIGURATION
 // -------------------------------------------------------------------------
-const API_URL = "https://script.google.com/macros/s/AKfycbyeXctRmbj5DCCOqC9gA7B7tJVRxMA-N8r9lcbZjE48KR0QHacLmFStMPKthXZpuD11/exec"; 
+const API_URL = "https://script.google.com/macros/s/AKfycbza1-ZyT4B8hU3h87Agc_jkPQ8dAjQBJkXkvxYfQ4SNAUENQtlXmYzdXgkC_Kj_zt-B/exec"; 
 const LOCAL_JSON_PATH = "data/events.json";
 
 let allEvents = [];
