@@ -599,5 +599,83 @@
         ]
       }
     ]
+  },
+  "game-dev-roadmap": {
+    "title": "GAME_DEV_9_BLOCK_PROTOCOL",
+    "phases": [
+      {
+        "title": "1. The Arcade Core",
+        "description": "Foundations of game logic: Game loop, delta time, finite state machines, basic 2D vector math, simple physics, AABB & circle collisions.",
+        "resources": [
+          {"name": "Game Programming Patterns", "url": "#"},
+          {"name": "Vector Math Basics", "url": "#"},
+          {"name": "Collision Detection 101", "url": "#"}
+        ]
+      },
+      {
+        "title": "2. Engine Protocol",
+        "description": "Introduction to Unity (C#) or Godot (GDScript): MonoBehaviour lifecycle, Scenes, Nodes, Signals, scripting, and IDE setup.",
+        "resources": [
+          {"name": "Unity C# Beginner Guide", "url": "#"},
+          {"name": "Godot 4 Getting Started", "url": "#"}
+        ]
+      },
+      {
+        "title": "3. Pixel & Sound Ops",
+        "description": "Creating/importing assets: pixels, sprites, tilemaps, sprite sheets, basics of sound design (SFX/BGM), and asset pipeline workflow.",
+        "resources": [
+          {"name": "Piskel Sprite Editor", "url": "#"},
+          {"name": "Free SFX Libraries", "url": "#"}
+        ]
+      },
+      {
+        "title": "4. Gameplay Systems Protocol",
+        "description": "Implementation of core systems like player controller, camera system, NPC logic, input handling, UI elements, and inventory mechanics.",
+        "resources": [
+          {"name": "Unity Input System Guide", "url": "#"},
+          {"name": "Godot UI with Control Nodes", "url": "#"}
+        ]
+      },
+      {
+        "title": "5. Physics & Movement Ops",
+        "description": "Rigidbodies, colliders, materials, gravity tuning, kinematic movement, character controllers, platformer physics, and raycasting.",
+        "resources": [
+          {"name": "Unity Physics Docs", "url": "#"},
+          {"name": "Godot Physics Explained", "url": "#"}
+        ]
+      },
+      {
+        "title": "6. AI Protocol",
+        "description": "Implementing AI using finite state machines, behavior trees, pathfinding (A*), steering behaviors, enemy logic, and difficulty balancing.",
+        "resources": [
+          {"name": "A* Pathfinding Tutorial", "url": "#"},
+          {"name": "FSM & Behavior Trees Guide", "url": "#"}
+        ]
+      },
+      {
+        "title": "7. Level Ops & World Building",
+        "description": "Tilemaps, procedural generation, lighting, world structure, scene transitions, checkpoints, atmosphere design, and progression flow.",
+        "resources": [
+          {"name": "Unity Tilemap System", "url": "#"},
+          {"name": "Godot Tilemap 4.x Tutorial", "url": "#"}
+        ]
+      },
+      {
+        "title": "8. Deployment Protocol",
+        "description": "Build pipelines, optimizing performance, compression, packaging, platform-specific builds (WebGL, Android, Windows).",
+        "resources": [
+          {"name": "Unity Build Settings Overview", "url": "#"},
+          {"name": "Godot Export Templates Guide", "url": "#"}
+        ]
+      },
+      {
+        "title": "9. Monetization & Live Ops",
+        "description": "Publishing games, integrating ads or in-app purchases, analytics, community building, versioning, patching, and post-launch updates.",
+        "resources": [
+          {"name": "Itch.io Upload Guide", "url": "#"},
+          {"name": "Steamworks Publishing Docs", "url": "#"}
+        ]
+      }
+    ]
   }
 }
