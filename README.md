@@ -200,29 +200,6 @@ We welcome **all contributions** — design updates, animations, UI fixes, new p
 👉 Detailed contribution guidelines -> [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ---
-<details>
-
-<summary><h1> 🧑‍💻 Core Committee — 2024–25</h1>
-</summary>
-
-* **Director:** Prathamesh Wamane
-* **President:** Krishna Shimpi
-* **Vice President:** Pratik Thorat
-* **Technical Head:** Harsh Pawar
-* **Treasurer:** Ayush Patil
-* **Event Head:** Laxmi Shingne
-* **Project Manager:** Krushna Gite
-* **Recruitment Head:** Pallavi Thote
-* **Web Development Lead:** Pushkar Thakare
-* **Design Head:** Shruti Gaikwad
-* **Embedded System Lead:** Diksha Rakibe
-* **Social Media & Branding Head:** Rushabh Pekhale
-* **Media & Publicity Head:** Sarvesh Aher
-* **Mentors:** Sayee Gosavi, Mohit Jagtap
-
-</details>
-
----
 
 # 🛠 Tech Stack
 
@@ -255,6 +232,29 @@ Have an idea?
 
 This project is licensed under the **MIT License**.
 See the full license in the [`LICENSE`](LICENSE) file.
+
+---
+<details>
+
+<summary><h1> 🧑‍💻 Core Committee — 2024–25</h1>
+</summary>
+
+* **Director:** Prathamesh Wamane
+* **President:** Krishna Shimpi
+* **Vice President:** Pratik Thorat
+* **Technical Head:** Harsh Pawar
+* **Treasurer:** Ayush Patil
+* **Event Head:** Laxmi Shingne
+* **Project Manager:** Krushna Gite
+* **Recruitment Head:** Pallavi Thote
+* **Web Development Lead:** Pushkar Thakare
+* **Design Head:** Shruti Gaikwad
+* **Embedded System Lead:** Diksha Rakibe
+* **Social Media & Branding Head:** Rushabh Pekhale
+* **Media & Publicity Head:** Sarvesh Aher
+* **Mentors:** Sayee Gosavi, Mohit Jagtap
+
+</details>
 
 ---
 
