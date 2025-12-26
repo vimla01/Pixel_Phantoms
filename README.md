@@ -15,14 +15,14 @@
 - [📫 Contact](#-contact)
 
 
-# 👻 Pixel Phantoms — From Students, For Students
+## 👻 Pixel Phantoms — From Students, For Students
 
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen)   
 ![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ---
 
-# 🌟 Project Overview
+## 🌟 Project Overview
 
 **Pixel Phantoms Official Website** is a **beginner-friendly, responsive, open-source community website** built using **HTML, CSS, and JavaScript**.
 
@@ -38,7 +38,7 @@ This repository welcomes **students, beginners, and open-source contributors**.
 
 ---
 
-# 🚀 Why This Project Matters
+## 🚀 Why This Project Matters
 
 ✔ Beginner-friendly for first-time contributors  
 ✔ Helps students learn **frontend development**  
@@ -48,7 +48,7 @@ This repository welcomes **students, beginners, and open-source contributors**.
 
 ---
 
-# 📦 How to Install & Run Locally
+## 📦 How to Install & Run Locally
 
 ### Prerequisites
 - A modern web browser (Chrome, Firefox, Safari, Edge)
@@ -77,7 +77,7 @@ The website will open in your default browser at `http://127.0.0.1:5500/` (or si
 ---
 <details>
 
-<summary><h1>📁 Project Structure</h1></summary>
+<summary><h2>📁 Project Structure</h2></summary>
 
 
 ```
@@ -150,7 +150,7 @@ pixel-phantoms-website/
 
 ---
 
-# 🎨 Screenshot / Demo
+## 🎨 Screenshot / Demo
 
 Here are some screenshots of the Pixel Phantoms website:
 
@@ -165,7 +165,7 @@ Here are some screenshots of the Pixel Phantoms website:
 
 ---
 
-# 🤝 How to Contribute
+## 🤝 How to Contribute
 
 We welcome **all contributions** — design updates, animations, UI fixes, new pages, and more.
 
@@ -204,7 +204,7 @@ We welcome **all contributions** — design updates, animations, UI fixes, new p
 
 ---
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 
 **Frontend:** <img width='20px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /> HTML5 / 
             <img width='20px' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /> CSS3 / 
@@ -214,7 +214,7 @@ We welcome **all contributions** — design updates, animations, UI fixes, new p
 
 ---
 
-# 🗺️ Project Roadmap
+## 🗺️ Project Roadmap
 
 ✅ Completed |🚧 In Progress |🔮 Coming Soon
 |---|---|---|
@@ -225,7 +225,7 @@ Navbar & footer components| |
 
 ---
 
-# 📝 Issues
+## 📝 Issues
 
 Found a bug?
 Have an idea?
@@ -233,7 +233,7 @@ Have an idea?
 
 ---
 
-# 📌 License
+## 📌 License
 
 This project is licensed under the **MIT License**.
 See the full license in the [`LICENSE`](LICENSE) file.
@@ -241,7 +241,7 @@ See the full license in the [`LICENSE`](LICENSE) file.
 ---
 <details>
 
-<summary><h1> 🧑‍💻 Core Committee — 2024–25</h1>
+<summary><h2> 🧑‍💻 Core Committee — 2024–25</h2>
 </summary>
 
 * **Director:** Prathamesh Wamane
@@ -263,7 +263,7 @@ See the full license in the [`LICENSE`](LICENSE) file.
 
 ---
 
-# 🔥 Contributors
+## 🔥 Contributors
 
 Thanks to all the amazing contributors who make this project better every day! 💖
 
@@ -277,7 +277,7 @@ Thanks to all the amazing contributors who make this project better every day! �
 
 ---
 
-# 📫 Contact
+## 📫 Contact
 
 **Admin:**
  **Sayee Gosavi**
